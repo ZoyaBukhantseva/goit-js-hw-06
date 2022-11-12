@@ -16,7 +16,7 @@ const images = [
 const galleryRef = document.querySelector('.gallery')
 
 let newItem  =  document.createElement('li')
-newItem = images.map(option => `<li class=gallery__item> <img src=${option.url} alt= ${option.alt}/></li>`)
+newItem = images.map(option => `<li class=gallery__item> <img src=${option.url}width = '200' alt= ${option.alt}/></li>`)
 .join("")
 galleryRef.insertAdjacentHTML("afterbegin", newItem)
 console.log(galleryRef)
